@@ -6,6 +6,7 @@ import { TimelineView } from './components/timeline/TimelineView';
 import { BudgetTracker } from './components/budget/BudgetTracker';
 import { ParticleBackground } from './components/effects/ParticleBackground';
 import { ConfettiTrigger } from './components/effects/ConfettiTrigger';
+import { MouseConfetti } from './components/effects/MouseConfetti';
 import { useTaskState } from './hooks/useTaskState';
 import { useBudget } from './hooks/useBudget';
 import { months } from './data/months';
@@ -64,6 +65,7 @@ export default function App() {
         progressPercent={progressPercent}
         completedMonths={completedMonths}
       />
+      <MouseConfetti />
     </>
   );
 }
