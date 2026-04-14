@@ -24,14 +24,14 @@ export interface Expense {
 }
 
 export type BudgetCategory =
-  | 'fly'
+  | 'transport'
   | 'overnatting'
   | 'aktiviteter'
   | 'mat-drikke'
   | 'annet';
 
 export const CATEGORY_LABELS: Record<BudgetCategory, string> = {
-  fly: 'Fly',
+  transport: 'Transport',
   overnatting: 'Overnatting',
   aktiviteter: 'Aktiviteter',
   'mat-drikke': 'Mat & Drikke',
@@ -39,7 +39,7 @@ export const CATEGORY_LABELS: Record<BudgetCategory, string> = {
 };
 
 export const CATEGORY_COLORS: Record<BudgetCategory, string> = {
-  fly: '#8b5cf6',
+  transport: '#8b5cf6',
   overnatting: '#ec4899',
   aktiviteter: '#f59e0b',
   'mat-drikke': '#10b981',

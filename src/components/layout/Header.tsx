@@ -19,7 +19,7 @@ export function Header() {
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
           className="mt-1 text-sm text-slate-400 dark:text-slate-400"
         >
-          12-månedersplan for den perfekte festen
+          12-månedersplan — Hardangerfjorden-edition
         </motion.p>
       </div>
       <motion.div

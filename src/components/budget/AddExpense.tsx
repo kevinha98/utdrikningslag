@@ -7,7 +7,7 @@ interface Props {
   onAdd: (description: string, amount: number, category: BudgetCategory) => void;
 }
 
-const categories: BudgetCategory[] = ['fly', 'overnatting', 'aktiviteter', 'mat-drikke', 'annet'];
+const categories: BudgetCategory[] = ['transport', 'overnatting', 'aktiviteter', 'mat-drikke', 'annet'];
 
 export function AddExpense({ onAdd }: Props) {
   const [description, setDescription] = useState('');

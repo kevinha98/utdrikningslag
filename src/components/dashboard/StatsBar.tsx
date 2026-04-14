@@ -41,7 +41,7 @@ export function StatsBar({ completedCount, totalTasks, progressPercent }: Props)
       {/* Countdown */}
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-400">
-          Nedtelling til avreise
+          Nedtelling til Hardanger
         </h2>
         <CountdownTimer />
       </div>
@@ -51,7 +51,7 @@ export function StatsBar({ completedCount, totalTasks, progressPercent }: Props)
         <StatCard label="Måneder igjen" value="12" custom={0} />
         <StatCard label="Budsjett/pers" value={`${BUDGET_MIN / 1000}–${BUDGET_MAX / 1000}k`} custom={1} />
         <StatCard label="Oppgaver fullført" value={`${completedCount}/${totalTasks}`} custom={2} />
-        <StatCard label="Fokus" value="Fest + aktiviteter" custom={3} />
+        <StatCard label="Fokus" value="Øl, cider & fjord" custom={3} />
       </div>
 
       {/* Progress ring — centered */}

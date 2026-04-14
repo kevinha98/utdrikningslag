@@ -37,7 +37,7 @@ export function useBudget() {
 
   const byCategory = useMemo(() => {
     const map: Record<BudgetCategory, number> = {
-      fly: 0,
+      transport: 0,
       overnatting: 0,
       aktiviteter: 0,
       'mat-drikke': 0,
