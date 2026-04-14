@@ -48,7 +48,7 @@ export function BudgetTracker({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="mb-6 text-center text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500"
+        className="mb-6 text-center text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-400"
       >
         Budsjettsporing
       </motion.h2>
@@ -60,7 +60,7 @@ export function BudgetTracker({
         className="space-y-4"
       >
         {/* Config row */}
-        <div className="flex flex-wrap gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/5 dark:bg-white/[0.03]">
+        <div className="flex flex-wrap gap-3 rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.05]">
           <div className="flex items-center gap-2">
             <label htmlFor="num-people" className="text-xs text-slate-500 dark:text-slate-400">Antall personer:</label>
             <input
@@ -100,8 +100,8 @@ export function BudgetTracker({
         </div>
 
         {/* Category breakdown bars */}
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/5 dark:bg-white/[0.03]">
-          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+        <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.05]">
+          <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">
             Fordeling per kategori
           </h3>
           <div className="space-y-2.5">
@@ -145,12 +145,12 @@ export function BudgetTracker({
 
 function SummaryCard({ label, value, highlight }: { label: string; value: string; highlight?: 'red' | 'green' }) {
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/5 dark:bg-white/[0.03]">
-      <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+    <div className="rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.05]">
+      <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">
         {label}
       </p>
       <p
-        className={`mt-1 font-outfit text-lg font-bold tabular-nums ${
+        className={`mt-1 font-syne text-lg font-bold tabular-nums ${
           highlight === 'red'
             ? 'text-red-500'
             : highlight === 'green'

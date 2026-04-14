@@ -9,7 +9,7 @@ export function Header() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="bg-gradient-to-r from-amber-400 via-pink-500 to-violet-500 bg-clip-text font-outfit text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl lg:text-5xl"
+          className="bg-gradient-to-r from-amber-400 via-pink-500 to-violet-500 bg-clip-text font-syne text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl lg:text-5xl"
         >
           Utdrikningslag
         </motion.h1>
@@ -17,7 +17,7 @@ export function Header() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
-          className="mt-1 text-sm text-slate-400 dark:text-slate-500"
+          className="mt-1 text-sm text-slate-400 dark:text-slate-400"
         >
           12-månedersplan for den perfekte festen
         </motion.p>

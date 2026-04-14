@@ -24,7 +24,7 @@ function Digit({ value, label }: { value: number; label: string }) {
             animate={{ y: 0, opacity: 1, rotateX: 0 }}
             exit={{ y: 20, opacity: 0, rotateX: -45 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="font-outfit text-xl font-bold tabular-nums text-slate-900 dark:text-white sm:text-2xl"
+            className="font-syne text-xl font-bold tabular-nums text-slate-900 dark:text-white sm:text-2xl"
           >
             {display}
           </motion.span>
@@ -54,11 +54,11 @@ export function CountdownTimer() {
       className="flex items-center gap-2 sm:gap-3"
     >
       <Digit value={time.days} label="dager" />
-      <span className="pb-5 font-outfit text-xl font-bold text-slate-300 dark:text-slate-600">:</span>
+      <span className="pb-5 font-syne text-xl font-bold text-slate-300 dark:text-slate-500">:</span>
       <Digit value={time.hours} label="timer" />
-      <span className="pb-5 font-outfit text-xl font-bold text-slate-300 dark:text-slate-600">:</span>
+      <span className="pb-5 font-syne text-xl font-bold text-slate-300 dark:text-slate-500">:</span>
       <Digit value={time.minutes} label="min" />
-      <span className="pb-5 font-outfit text-xl font-bold text-slate-300 dark:text-slate-600">:</span>
+      <span className="pb-5 font-syne text-xl font-bold text-slate-300 dark:text-slate-500">:</span>
       <Digit value={time.seconds} label="sek" />
     </motion.div>
   );

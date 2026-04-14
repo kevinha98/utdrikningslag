@@ -49,7 +49,7 @@ export function MonthCard({ month, isCompleted, toggleTask, monthProgress, isMon
         className={`overflow-hidden rounded-2xl border backdrop-blur-sm transition-shadow duration-300
           ${isMonthComplete
             ? 'border-green-400/40 bg-green-50/80 shadow-lg shadow-green-500/10 dark:border-green-500/20 dark:bg-green-950/20'
-            : 'border-slate-200 bg-white/70 shadow-sm hover:shadow-lg dark:border-white/5 dark:bg-white/[0.03] dark:hover:shadow-xl dark:hover:shadow-black/20'
+            : 'border-slate-200 bg-white/70 shadow-sm hover:shadow-lg dark:border-white/10 dark:bg-white/[0.05] dark:hover:shadow-xl dark:hover:shadow-black/20'
           }`}
       >
         {/* Header — always visible */}
@@ -68,7 +68,7 @@ export function MonthCard({ month, isCompleted, toggleTask, monthProgress, isMon
           {/* Info */}
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-2">
-              <h3 className="truncate font-outfit text-base font-semibold text-slate-900 dark:text-white">
+              <h3 className="truncate font-syne text-base font-semibold text-slate-900 dark:text-white">
                 {month.title}
               </h3>
               {isMonthComplete && (
@@ -94,7 +94,7 @@ export function MonthCard({ month, isCompleted, toggleTask, monthProgress, isMon
 
           {/* Mini progress + chevron */}
           <div className="flex flex-shrink-0 items-center gap-2">
-            <span className="hidden text-xs tabular-nums text-slate-400 dark:text-slate-500 sm:inline">
+            <span className="hidden text-xs tabular-nums text-slate-400 dark:text-slate-400 sm:inline">
               {monthProgress.done}/{monthProgress.total}
             </span>
             <motion.svg
@@ -113,7 +113,7 @@ export function MonthCard({ month, isCompleted, toggleTask, monthProgress, isMon
         </button>
 
         {/* Mini progress bar under header */}
-        <div className="mx-4 mb-2 h-1 overflow-hidden rounded-full bg-slate-100 dark:bg-white/5 sm:mx-5">
+        <div className="mx-4 mb-2 h-1 overflow-hidden rounded-full bg-slate-100 dark:bg-white/10 sm:mx-5">
           <motion.div
             className="h-full rounded-full"
             style={{ background: `linear-gradient(90deg, ${month.accentColor}, ${month.accentColor}dd)` }}

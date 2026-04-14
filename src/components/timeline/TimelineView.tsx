@@ -16,7 +16,7 @@ export function TimelineView({ isCompleted, toggleTask, monthProgress, isMonthCo
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="mb-6 text-center text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500"
+        className="mb-6 text-center text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-400"
       >
         12-månedersplan
       </motion.h2>
@@ -26,7 +26,7 @@ export function TimelineView({ isCompleted, toggleTask, monthProgress, isMonthCo
         <div className="absolute left-[1.65rem] top-0 hidden h-full w-px bg-gradient-to-b from-amber-400/30 via-pink-500/30 to-violet-500/30 sm:block" />
 
         <motion.div
-          className="flex flex-col gap-3 sm:gap-4"
+          className="grid grid-cols-1 gap-3 lg:grid-cols-2 sm:gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}

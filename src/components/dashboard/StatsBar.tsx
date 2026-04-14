@@ -25,12 +25,12 @@ function StatCard({ label, value, custom }: { label: string; value: string; cust
       custom={custom}
       initial="hidden"
       animate="visible"
-      className="rounded-2xl border border-slate-200 bg-white/70 p-5 shadow-sm backdrop-blur-sm dark:border-white/5 dark:bg-white/[0.03]"
+      className="rounded-2xl border border-slate-200 bg-white/70 p-5 shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.05]"
     >
-      <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+      <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">
         {label}
       </p>
-      <p className="mt-1 font-outfit text-2xl font-bold text-slate-900 dark:text-white">{value}</p>
+      <p className="mt-1 font-syne text-2xl font-bold text-slate-900 dark:text-white">{value}</p>
     </motion.div>
   );
 }
@@ -40,7 +40,7 @@ export function StatsBar({ completedCount, totalTasks, progressPercent }: Props)
     <section className="relative z-10 mt-8 space-y-8">
       {/* Countdown */}
       <div className="flex flex-col items-center gap-4">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-400">
           Nedtelling til avreise
         </h2>
         <CountdownTimer />

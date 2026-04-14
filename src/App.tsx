@@ -31,7 +31,7 @@ export default function App() {
   return (
     <>
       <ParticleBackground />
-      <div className="relative mx-auto max-w-3xl px-4 sm:px-6">
+      <main className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Header />
         <StatsBar
           completedCount={completedCount}
@@ -59,7 +59,7 @@ export default function App() {
           removeExpense={budget.removeExpense}
         />
         <Footer />
-      </div>
+      </main>
       <ConfettiTrigger
         progressPercent={progressPercent}
         completedMonths={completedMonths}

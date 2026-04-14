@@ -21,7 +21,7 @@ export function ProgressRing({ percent, size = 120, strokeWidth = 8 }: Props) {
           fill="none"
           stroke="currentColor"
           strokeWidth={strokeWidth}
-          className="text-slate-200 dark:text-white/5"
+          className="text-slate-200 dark:text-white/10"
         />
         <motion.circle
           cx={size / 2}
@@ -49,7 +49,7 @@ export function ProgressRing({ percent, size = 120, strokeWidth = 8 }: Props) {
           key={percent}
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className="font-outfit text-2xl font-bold text-slate-900 dark:text-white"
+          className="font-syne text-2xl font-bold text-slate-900 dark:text-white"
         >
           {percent}%
         </motion.span>
