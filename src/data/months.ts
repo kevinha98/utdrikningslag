@@ -13,7 +13,7 @@ export const months: Month[] = [
   {
     num: 12,
     title: 'Kickoff — sett gjengen',
-    sub: 'Hvem er med? Kva slags helg vil vi ha?',
+    sub: 'Hvem er med? Hva slags helg vil vi ha?',
     badge: 'Start her',
     badgeColor: '#7c3aed',
     badgeBg: '#ede9ff',
@@ -99,7 +99,7 @@ export const months: Month[] = [
   {
     num: 7,
     title: 'Tema og stemning',
-    sub: 'Kva slags vibe vil vi ha?',
+    sub: 'Hva slags vibe vil vi ha?',
     badge: 'Planlegg',
     badgeColor: '#e67e22',
     badgeBg: '#fef3e2',
